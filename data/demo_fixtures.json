@@ -1,0 +1,275 @@
+{
+  "notice": "Authored offline demonstration values, not live execution or student data.",
+  "fixtures": [
+    {
+      "exercise_id": "sum",
+      "code_hash": "eee33e990d7c20760896078f2b0568cf6b1285e2c7f183f3f29825cbd6a5b210",
+      "label": "buggy starter",
+      "rows": [
+        {
+          "id": "sum_01",
+          "actual": 30,
+          "status": "returned"
+        },
+        {
+          "id": "sum_02",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "sum_03",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "sum_04",
+          "actual": -2,
+          "status": "returned"
+        }
+      ]
+    },
+    {
+      "exercise_id": "sum",
+      "code_hash": "95f380fe502146a19cb6c0f772f4ce2cc615fd40ac922f8d479c29edb7982ebc",
+      "label": "reference",
+      "rows": [
+        {
+          "id": "sum_01",
+          "actual": 60,
+          "status": "returned"
+        },
+        {
+          "id": "sum_02",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "sum_03",
+          "actual": 5,
+          "status": "returned"
+        },
+        {
+          "id": "sum_04",
+          "actual": 1,
+          "status": "returned"
+        }
+      ]
+    },
+    {
+      "exercise_id": "even",
+      "code_hash": "4263c7ff70956d42c2fbf2d05d12b4e7c47d61fdf5911e4ef06b638b0429ac20",
+      "label": "buggy starter",
+      "rows": [
+        {
+          "id": "even_01",
+          "actual": 1,
+          "status": "returned"
+        },
+        {
+          "id": "even_02",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "even_03",
+          "actual": 2,
+          "status": "returned"
+        },
+        {
+          "id": "even_04",
+          "actual": 3,
+          "status": "returned"
+        }
+      ]
+    },
+    {
+      "exercise_id": "even",
+      "code_hash": "9a797d7dfe11a29a483f9d51f92445c0d33b3583285ba9b5eb85a4f99e7ff30a",
+      "label": "reference",
+      "rows": [
+        {
+          "id": "even_01",
+          "actual": 2,
+          "status": "returned"
+        },
+        {
+          "id": "even_02",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "even_03",
+          "actual": 2,
+          "status": "returned"
+        },
+        {
+          "id": "even_04",
+          "actual": 0,
+          "status": "returned"
+        }
+      ]
+    },
+    {
+      "exercise_id": "max",
+      "code_hash": "91c4e1abea4aea48966aac1b8b4152c7f2996eeb942af27df281ba598b147504",
+      "label": "buggy starter",
+      "rows": [
+        {
+          "id": "max_01",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "max_02",
+          "actual": 5,
+          "status": "returned"
+        },
+        {
+          "id": "max_03",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "max_04",
+          "actual": 9,
+          "status": "returned"
+        }
+      ]
+    },
+    {
+      "exercise_id": "max",
+      "code_hash": "c1af90de36c874872af08042b39011bd4dfa42cabf91651d701b3e1199e88067",
+      "label": "reference",
+      "rows": [
+        {
+          "id": "max_01",
+          "actual": -3,
+          "status": "returned"
+        },
+        {
+          "id": "max_02",
+          "actual": 5,
+          "status": "returned"
+        },
+        {
+          "id": "max_03",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "max_04",
+          "actual": 9,
+          "status": "returned"
+        }
+      ]
+    },
+    {
+      "exercise_id": "vowels",
+      "code_hash": "483ac3f857fb55e9af89659d7367fa2afc76ef4e831cdce00db922d2e4db3df4",
+      "label": "buggy starter",
+      "rows": [
+        {
+          "id": "vowels_01",
+          "actual": 1,
+          "status": "returned"
+        },
+        {
+          "id": "vowels_02",
+          "actual": null,
+          "status": "returned"
+        },
+        {
+          "id": "vowels_03",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "vowels_04",
+          "actual": 1,
+          "status": "returned"
+        }
+      ]
+    },
+    {
+      "exercise_id": "vowels",
+      "code_hash": "b6f11a914234d98f2698b0c0ed083a2a07c7139035be7416f2f3a262ff2dcea9",
+      "label": "reference",
+      "rows": [
+        {
+          "id": "vowels_01",
+          "actual": 5,
+          "status": "returned"
+        },
+        {
+          "id": "vowels_02",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "vowels_03",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "vowels_04",
+          "actual": 5,
+          "status": "returned"
+        }
+      ]
+    },
+    {
+      "exercise_id": "factorial",
+      "code_hash": "796dcccc8ebbaa628b76a24c6aba6d3916c82affc9f2ef74df3af10ced6d7db4",
+      "label": "buggy starter",
+      "rows": [
+        {
+          "id": "factorial_01",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "factorial_02",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "factorial_03",
+          "actual": 0,
+          "status": "returned"
+        },
+        {
+          "id": "factorial_04",
+          "actual": 0,
+          "status": "returned"
+        }
+      ]
+    },
+    {
+      "exercise_id": "factorial",
+      "code_hash": "d43df24f7c7fbe1b959ba77074aff0088b653b3fd53d7563410ef64336b4eef3",
+      "label": "reference",
+      "rows": [
+        {
+          "id": "factorial_01",
+          "actual": 24,
+          "status": "returned"
+        },
+        {
+          "id": "factorial_02",
+          "actual": 1,
+          "status": "returned"
+        },
+        {
+          "id": "factorial_03",
+          "actual": 1,
+          "status": "returned"
+        },
+        {
+          "id": "factorial_04",
+          "actual": 120,
+          "status": "returned"
+        }
+      ]
+    }
+  ]
+}

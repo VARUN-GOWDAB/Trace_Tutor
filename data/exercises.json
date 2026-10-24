@@ -1,0 +1,257 @@
+[
+  {
+    "id": "sum",
+    "title": "Sum a list",
+    "function": "sum_numbers",
+    "description": "Return the sum of all integers in a list. Empty lists return 0.",
+    "starter": "def sum_numbers(numbers):\n    total = 0\n    for i in range(len(numbers) - 1):\n        total += numbers[i]\n    return total\n",
+    "reference": "def sum_numbers(numbers):\n    total = 0\n    for number in numbers:\n        total += number\n    return total\n",
+    "tests": [
+      {
+        "id": "sum_01",
+        "args": [
+          [
+            10,
+            20,
+            30
+          ]
+        ],
+        "expected": 60
+      },
+      {
+        "id": "sum_02",
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "id": "sum_03",
+        "args": [
+          [
+            5
+          ]
+        ],
+        "expected": 5
+      },
+      {
+        "id": "sum_04",
+        "args": [
+          [
+            -2,
+            3
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "hints": [
+      "Check whether the loop processes every element.",
+      "Compare the returned sum with the expected sum. Which elements might be missing?",
+      "The stop value of range() is excluded. Examine how you calculate it."
+    ],
+    "explanation": "The original loop excludes the last element. Iterating over the values includes every element and handles an empty list."
+  },
+  {
+    "id": "even",
+    "title": "Count even numbers",
+    "function": "count_even",
+    "description": "Count the even integers in a list, including zero and negative even numbers.",
+    "starter": "def count_even(numbers):\n    count = 0\n    for number in numbers:\n        if number % 2 != 0:\n            count += 1\n    return count\n",
+    "reference": "def count_even(numbers):\n    count = 0\n    for number in numbers:\n        if number % 2 == 0:\n            count += 1\n    return count\n",
+    "tests": [
+      {
+        "id": "even_01",
+        "args": [
+          [
+            2,
+            4,
+            5
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "id": "even_02",
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "id": "even_03",
+        "args": [
+          [
+            0,
+            -2,
+            3,
+            7
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "id": "even_04",
+        "args": [
+          [
+            1,
+            3,
+            5
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "hints": [
+      "Check what the condition selects.",
+      "Try a list with only even numbers and compare the count.",
+      "Think about the remainder an even number leaves when divided by two."
+    ],
+    "explanation": "The condition selected odd numbers. A zero remainder identifies even integers, including zero and negative even integers."
+  },
+  {
+    "id": "max",
+    "title": "Find maximum",
+    "function": "find_max",
+    "description": "Return the largest integer in a nonempty list. Empty lists are outside the contract.",
+    "starter": "def find_max(numbers):\n    largest = 0\n    for number in numbers:\n        if number > largest:\n            largest = number\n    return largest\n",
+    "reference": "def find_max(numbers):\n    largest = numbers[0]\n    for number in numbers:\n        if number > largest:\n            largest = number\n    return largest\n",
+    "tests": [
+      {
+        "id": "max_01",
+        "args": [
+          [
+            -8,
+            -3,
+            -10
+          ]
+        ],
+        "expected": -3
+      },
+      {
+        "id": "max_02",
+        "args": [
+          [
+            5
+          ]
+        ],
+        "expected": 5
+      },
+      {
+        "id": "max_03",
+        "args": [
+          [
+            0,
+            -2
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "id": "max_04",
+        "args": [
+          [
+            2,
+            9,
+            1
+          ]
+        ],
+        "expected": 9
+      }
+    ],
+    "hints": [
+      "Consider lists containing only negative numbers.",
+      "Can the initial candidate be larger than every input value?",
+      "Choose an initial candidate that belongs to the nonempty input."
+    ],
+    "explanation": "Starting at zero fails for all-negative inputs. Starting with a member of the nonempty list gives a valid candidate."
+  },
+  {
+    "id": "vowels",
+    "title": "Count vowels",
+    "function": "count_vowels",
+    "description": "Count a, e, i, o, u case-insensitively in a string. Empty strings return 0.",
+    "starter": "def count_vowels(text):\n    count = 0\n    for character in text.lower():\n        if character in \"aeiou\":\n            count += 1\n        return count\n",
+    "reference": "def count_vowels(text):\n    count = 0\n    for character in text.lower():\n        if character in \"aeiou\":\n            count += 1\n    return count\n",
+    "tests": [
+      {
+        "id": "vowels_01",
+        "args": [
+          "Education"
+        ],
+        "expected": 5
+      },
+      {
+        "id": "vowels_02",
+        "args": [
+          ""
+        ],
+        "expected": 0
+      },
+      {
+        "id": "vowels_03",
+        "args": [
+          "sky"
+        ],
+        "expected": 0
+      },
+      {
+        "id": "vowels_04",
+        "args": [
+          "AEIOU"
+        ],
+        "expected": 5
+      }
+    ],
+    "hints": [
+      "Check when the function finishes.",
+      "Does the function return before examining the entire string?",
+      "Indentation determines whether return belongs to the loop body."
+    ],
+    "explanation": "The original return ends the function during its first iteration. Returning after the loop processes all characters and returns zero for an empty string."
+  },
+  {
+    "id": "factorial",
+    "title": "Factorial",
+    "function": "factorial",
+    "description": "Return n! for a nonnegative integer n. factorial(0) is 1.",
+    "starter": "def factorial(n):\n    product = 0\n    for number in range(1, n + 1):\n        product *= number\n    return product\n",
+    "reference": "def factorial(n):\n    product = 1\n    for number in range(1, n + 1):\n        product *= number\n    return product\n",
+    "tests": [
+      {
+        "id": "factorial_01",
+        "args": [
+          4
+        ],
+        "expected": 24
+      },
+      {
+        "id": "factorial_02",
+        "args": [
+          0
+        ],
+        "expected": 1
+      },
+      {
+        "id": "factorial_03",
+        "args": [
+          1
+        ],
+        "expected": 1
+      },
+      {
+        "id": "factorial_04",
+        "args": [
+          5
+        ],
+        "expected": 120
+      }
+    ],
+    "hints": [
+      "Examine the starting value of the running product.",
+      "What happens whenever a number is multiplied by zero?",
+      "The multiplicative identity should also give the correct answer when the loop has no iterations."
+    ],
+    "explanation": "A product starts at the multiplicative identity, one. This also yields factorial(0)=1 when the loop is empty."
+  }
+]
